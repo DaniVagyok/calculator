@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="main">
+        <div class="upper">{{ fullForm }}</div>
+        <div class="lower">{{ value }}</div>
+        <div class="error" *ngIf="errorString">{{ errorString }}</div>
+    </div>
+
+
+    <table class="table table-bordered">
+        <tr>
+            <th (click)="fullclear()">AC</th>
+            <th (click)="pressKey('/')">/</th>
+            <th (click)="pressKey('*')">*</th>
+            <th (click)="backSpace()">Vissza</th>
+        </tr>
+        <tr>
+            <th (click)="pressKey('7')">7</th>
+            <th (click)="pressKey('8')">8</th>
+            <th (click)="pressKey('9')">9</th>
+            <th (click)="pressKey('-')">-</th>
+        </tr>
+        <tr>
+            <th (click)="pressKey('4')">4</th>
+            <th (click)="pressKey('5')">5</th>
+            <th (click)="pressKey('6')">6</th>
+            <th (click)="pressKey('+')">+</th>
+        </tr>
+        <tr>
+            <th (click)="pressKey('1')">1</th>
+            <th (click)="pressKey('2')">2</th>
+            <th (click)="pressKey('3')">3</th>
+            <th (click)="evaluate()">=</th>
+        </tr>
+        <tr>
+            <th (click)="pressKey('0')">0</th>
+            <th (click)="pressKey('.')">.</th>
+            <th (click)="writeValue()">Mentés</th>
+            <th (click)="readValue()">Kiolvasás</th>
+        </tr>
+    </table>
+</div>

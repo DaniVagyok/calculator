@@ -1,0 +1,37 @@
+.main {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 5%;
+    background-color: whitesmoke;
+    height: 180px;
+    text-align: right;
+}
+
+.upper {
+    font-size: 2rem;
+    padding: 0.3em;
+    overflow: auto;
+}
+
+.lower {
+    font-size: 2rem;
+    padding: 0.3em;
+    overflow: auto;
+}
+
+.error{
+    color: red;
+}
+
+table{
+    table-layout: fixed;
+}
+
+tr{
+    width: 25%;
+    justify-content: center;
+    text-align: center;
+    :hover{
+        background-color: whitesmoke;
+    }
+}
